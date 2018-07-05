@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param originSequence An object that implements the `NSFastEnumeration` protocol
  @return An initialized EZSequence object
  */
-- (instancetype)initWithOriginSequence:(id<NSFastEnumeration>)originSequence NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithOriginSequence:(id<NSFastEnumeration, NSObject>)originSequence NS_DESIGNATED_INITIALIZER;
 
 /**
  Converts EZSequence to the specified object implented the `EZSTransfer` protocol
